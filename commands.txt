@@ -1,0 +1,79 @@
+node -v
+npm -v
+npm install -g npm@latest
+
+
+
+
+npm install -g @angular/cli
+npx ng version
+
+npx ng new test-app
+
+cd test-app
+npx ng serve --open 
+
+
+npx ng g c header
+npx ng g c recipe-card
+
+
+
+
+Компонент:
+1)name.component.ts - основная логика и данные
+2)name.component.html-шаблон(разметка)
+3)name.components.css-стили компонента
+4)name.component.spec.ts-модульные тесты 
+
+
+npx ng generate component user-profile
+npx ng g c user-profile
+
+
+
+
+
+
+
+ 
+
+npx ng g c header
+npx ng g c card
+npx ng g c footer
+
+
+
+
+
+@Input принимает данные сверху вниз. 
+В шаблоне используется в квадратных скобках: 
+[title]="item.title"
+
+@Output передает сигналы/события снизу вверх. 
+В шаблоне используется в круглых скобках: 
+(cardDelete)="removeCard(card.id)" 
+используется класс EventEmitter и его метод .emit()
+
+
+
+вывести в футере текущий год, author и значок копирайта
+
+
+
+
+
+
+
+
+
+
+
+
+
+cd recipes
+Директивы:
+-структурные @if, @for, @switch, @else, @empty.....
+-атрибутивные [ngStyle] [ngClass]
+
+
