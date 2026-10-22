@@ -77,3 +77,14 @@ cd recipes
 -атрибутивные [ngStyle] [ngClass]
 
 
+npx ng new task-app --routing=false --style=css
+cd task-app
+npx ng g s services/task
+npx ng serve -o
+
+
+Routers - маршрутизация 
+
+npx ng g c pages/home
+npx ng g c pages/tasks
+npx ng g c components/navbar 

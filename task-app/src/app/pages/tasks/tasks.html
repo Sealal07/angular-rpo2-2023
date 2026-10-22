@@ -1,0 +1,21 @@
+
+<div>
+  <h2>Список задач</h2>
+  <div>
+    <input type="text"
+    [(ngModel)]="newTaskTitle"
+    placeholder="Что нужно сделать?"
+    >
+    <button (click)="addNewTask()">Добавить</button>
+  </div>
+  <ul>
+    @for(task of tasks; track task.id){
+      <li>
+        <span>{{ task.title }}</span>
+        <button (click)="removeTask(task.id)">
+          Удалить
+        </button>
+      </li>
+    }
+  </ul>
+</div>
