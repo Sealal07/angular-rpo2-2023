@@ -1,0 +1,11 @@
+<div class="card">
+    <h3>{{ title }}</h3>
+    <p>{{ desc }}</p>
+    <div class="card-footer">
+        <button (click)="onDeleteClick()">❌</button>
+        <button (click)="incrementLikes()">
+            👍 ({{ likeCount }})
+        </button>
+
+    </div>
+</div>

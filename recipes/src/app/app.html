@@ -1,0 +1,16 @@
+<!-- <div
+  [ngStyle]="{'background-color': boxColor, 
+  'font-size': isWarning ? '20px' : '14px'}">
+  блок меняет стили динамически
+</div>
+
+<div [ngClass]="{'active': isActive, 
+'default': !isActive}">
+  карточка
+</div> -->
+
+<app-header
+  (filterToggle)="onToggleFilter()"
+></app-header>
+
+<h2>{{ showOnlyFavorites ? 'Избранное' : 'Все рецепты' }}</h2>

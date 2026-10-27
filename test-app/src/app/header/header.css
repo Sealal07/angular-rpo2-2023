@@ -1,0 +1,18 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3f51fb;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header button{
+    background-color: white;
+    color: #3f51fb;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}

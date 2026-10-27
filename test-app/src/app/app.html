@@ -1,0 +1,26 @@
+<app-header></app-header>
+<main>
+  <input type="text"
+  [(ngModel)]="userName"
+  >
+
+    @if (userName) {
+      <button (click)="userName=''">Очистить</button>
+    }
+
+    <p>Привет, {{ userName }}</p>
+
+  <h2>Карточки</h2>
+  <div class="cards-container">
+    @for (item of items; track item.title){
+      <app-card
+        [title]="item.title"
+        [desc]="item.desc"
+        (cardDelete)="removeCard(item.id)"
+      ></app-card>
+    }@empty {
+      <p>Карточек нет</p>
+    }
+  </div>
+</main>
+<app-footer></app-footer>

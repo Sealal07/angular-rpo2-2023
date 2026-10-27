@@ -1,0 +1,9 @@
+<div class="card " 
+    [ngClass]="{'favorite-card': isFavorite}">
+    <div class="badge">{{ category }}</div>
+    <h3>{{ title }}</h3>
+    <p>🕑{{ time }}</p>
+    <button (click)="onFavoriteClick()" class="fav-btn">
+        {{ isFavorite ? '💖' : '🤍' }}
+    </button>
+</div>

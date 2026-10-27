@@ -1,0 +1,20 @@
+.card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.card h3{
+    margin-top: 0;
+    color: #333;
+}
+.card button{
+    background-color: #4caf58;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    border: none;
+}
